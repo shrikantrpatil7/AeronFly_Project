@@ -20,8 +20,8 @@ const Footer = ({ noWave, rtl }) => {
   }
 
   return (
-    <footer className={`style-4 ${noWave ? 'mt-0 pt-100':''}`} data-scroll-index="8">
-      <div className="container">
+    <footer class={`style-4 ${noWave ? 'mt-0 pt-100':''}`} data-scroll-index="8">
+      <div class="container">
 
       <div class="inner">
 
@@ -79,7 +79,7 @@ const Footer = ({ noWave, rtl }) => {
 
         </div>
 
-        <div  className='pikachu'>
+        <div  class='pikachu'>
         <div class="inner">
         <a href="index">
 
@@ -236,26 +236,26 @@ const Footer = ({ noWave, rtl }) => {
 
 
 
- {/* <div className="section-head text-center style-4">
-          <h2 className="mb-10">{ rtl ? 'جاهز' : 'Ready To' } <span>{ rtl ? 'للتنزيل' : 'Download' }</span> </h2>
+ {/* <div class="section-head text-center style-4">
+          <h2 class="mb-10">{ rtl ? 'جاهز' : 'Ready To' } <span>{ rtl ? 'للتنزيل' : 'Download' }</span> </h2>
           <p>{ rtl ? 'اكتشف مساحاتك المفضلة الجديدة ، من ساو باولو إلى سيول. قم بالتنزيل من App Store أو Google Play.' : 'Discover your new favorite spaces, from Sao Paulo to Seoul. Download from App Store or Google Play.' }</p>
-          <div className="d-flex align-items-center justify-content-center mt-50">
-            <a href="https://www.apple.com/app-store" rel="noreferrer" className="btn rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank">
-              <small> <i className="fab fa-apple me-2 pe-2 border-end"></i> { rtl ? 'تنزيل من متجر التطبيقات' : 'Download On App Store' }</small>
+          <div class="d-flex align-items-center justify-content-center mt-50">
+            <a href="https://www.apple.com/app-store" rel="noreferrer" class="btn rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank">
+              <small> <i class="fab fa-apple me-2 pe-2 border-end"></i> { rtl ? 'تنزيل من متجر التطبيقات' : 'Download On App Store' }</small>
             </a>
-            <a href="https://play.google.com/store/apps" rel="noreferrer" className="btn rounded-pill hover-blue4 fw-bold border-blue4" target="_blank">
-              <small> <i className="fab fa-google-play me-2 pe-2 border-end"></i> { rtl ? 'تنزيل من متجر ابل' : 'Download On Google Play' }</small>
+            <a href="https://play.google.com/store/apps" rel="noreferrer" class="btn rounded-pill hover-blue4 fw-bold border-blue4" target="_blank">
+              <small> <i class="fab fa-google-play me-2 pe-2 border-end"></i> { rtl ? 'تنزيل من متجر ابل' : 'Download On Google Play' }</small>
             </a>
           </div>
         </div> */}
 
 
 
-        <div className="foot mt-80">
-          <div className="row align-items-center">
+        <div class="foot mt-80">
+          <div class="row align-items-center">
            
          
-            <div className="col-lg-2">
+            <div class="col-lg-2">
              
               
             </div>
@@ -295,7 +295,7 @@ const Footer = ({ noWave, rtl }) => {
   width="20"
   alt="India"/>
                 
-                </b> with <i className="fas fa-heart" style={{ color: '#b50f0f' }}></i></p>
+                </b> with <i class="fas fa-heart" style={{ color: '#b50f0f' }}></i></p>
 
             
 
@@ -312,15 +312,15 @@ const Footer = ({ noWave, rtl }) => {
 
             <ul class="social-icons">
 
-                <li><a href="https://www.facebook.com/aeronpay"><i className="fab fa-facebook fa-2x me-2 pe-2 border-end"></i>
+                <li><a href="https://www.facebook.com/aeronpay"><i class="fab fa-facebook fa-2x me-2 pe-2 border-end"></i>
 </a></li>
 
-                <li><a href="https://www.instagram.com/aeronpay"><i className="fab fa-twitter  fa-2x me-2 pe-2 border-end"></i></a></li>
+                <li><a href="https://www.instagram.com/aeronpay"><i class="fab fa-twitter  fa-2x me-2 pe-2 border-end"></i></a></li>
 
-                <li><a href="https://twitter.com/aeronpay"><i className="fab fa-linkedin  fa-2x me-2 pe-2 border-end"></i>
+                <li><a href="https://twitter.com/aeronpay"><i class="fab fa-linkedin  fa-2x me-2 pe-2 border-end"></i>
 </a></li>
 
-                <li><a href="https://in.linkedin.com/company/aeronpay"><i className="fab fa-instagram  fa-2x me-2 pe-2 border-end"></i>
+                <li><a href="https://in.linkedin.com/company/aeronpay"><i class="fab fa-instagram  fa-2x me-2 pe-2 border-end"></i>
 </a></li>
 
                 <li><a href="https://www.youtube.com/channel/UCmJUvfu-ImvkE58MtBhHJBQ"> 
@@ -348,7 +348,7 @@ const Footer = ({ noWave, rtl }) => {
       </div>
 
 
-      { !noWave && <img src="/assets/img/footer/footer_4_wave.png" alt="" className="wave" /> }
+      { !noWave && <img src="/assets/img/footer/footer_4_wave.png" alt="" class="wave" /> }
     </footer>
   )
 }

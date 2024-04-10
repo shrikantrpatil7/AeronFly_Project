@@ -3,37 +3,37 @@ import Link from 'next/link';
 
 const Footer = ({ noWave, rtl }) => {
   const handleMouseMove = (event) => {
-    const dropDownToggler = event.target.classList.contains('dropdown-toggle') ? event.target : event.target.querySelector('.dropdown-toggle');
+    const dropDownToggler = event.target.classNameList.contains('dropdown-toggle') ? event.target : event.target.querySelector('.dropdown-toggle');
     const dropDownMenu = dropDownToggler?.nextElementSibling;
 
-    dropDownToggler?.classList?.add('show');
-    dropDownMenu?.classList?.add('show');
+    dropDownToggler?.classNameList?.add('show');
+    dropDownMenu?.classNameList?.add('show');
   }
 
   const handleMouseLeave = (event) => {
-    const dropdown = event.target.classList.contains('dropdown') ? event.target : event.target.closest('.dropdown');
+    const dropdown = event.target.classNameList.contains('dropdown') ? event.target : event.target.closest('.dropdown');
     const dropDownToggler = dropdown.querySelector('.dropdown-toggle');
     const dropDownMenu = dropdown.querySelector('.dropdown-menu');
 
-    dropDownToggler?.classList?.remove('show');
-    dropDownMenu?.classList?.remove('show');
+    dropDownToggler?.classNameList?.remove('show');
+    dropDownMenu?.classNameList?.remove('show');
   }
 
   return (
-    <footer class={`style-4 ${noWave ? 'mt-0 pt-100':''}`} data-scroll-index="8">
-      <div class="container">
+    <footer className={`style-4 ${noWave ? 'mt-0 pt-100':''}`} data-scroll-index="8">
+      <div className="container">
 
-      <div class="inner">
+      <div className="inner">
 
-<div class="content text-left">
+<div className="content text-left">
 
-    <div class="logo">
+    <div className="logo">
 
-        <h4 class="theme-gradient" id="heading-table">Disclaimer:</h4>
+        <h4 className="theme-gradient" id="heading-table">Disclaimer:</h4>
 
     </div>
 
-    <p class="sal-animate history-text" data-sal="slide-up" data-sal-duration="400"
+    <p className="sal-animate history-text" data-sal="slide-up" data-sal-duration="400"
 
         data-sal-delay="150">Please do not share your AeronPay Wallet password,
 
@@ -55,20 +55,20 @@ const Footer = ({ noWave, rtl }) => {
 
 </div>
 
-<div class="footer-top">
+<div className="footer-top">
 
 
 
-<div class="container">
+<div className="container">
 
 
-    <div class="row center-footer">
+    <div className="row center-footer">
 
-        <div class="col-12  fo-cc-re"> 
+        <div className="col-12  fo-cc-re"> 
 
-            <div class="rn-footer-widget">
+            <div className="rn-footer-widget">
 
-                <div class="logo footer-imre">
+                <div className="logo footer-imre">
 
                        
                 </div>
@@ -79,31 +79,31 @@ const Footer = ({ noWave, rtl }) => {
 
         </div>
 
-        <div  class='pikachu'>
-        <div class="inner">
+        <div  className='pikachu'>
+        <div className="inner">
         <a href="index">
 
 
-<img class="logo-dark" src="/assets/img/logo-dark.png" alt="Corporate Logo" />
+<img className="logo-dark" src="/assets/img/logo-dark.png" alt="Corporate Logo" />
 
   
 </a>
 
-<h6 class="subtitle fo-co-rd">AeronPay Provides Utility Bill Payments and Secure Financial Services to the Indian Retailers and Customers.</h6>
+<h6 className="subtitle fo-co-rd">AeronPay Provides Utility Bill Payments and Secure Financial Services to the Indian Retailers and Customers.</h6>
 
 
 
 </div>
 
-        <div class="col-lg-2 col-md-6 col-sm-6 col-12 fo-op-re">
+        <div className="col-lg-2 col-md-6 col-sm-6 col-12 fo-op-re">
 
-            <div class="rn-footer-widget">
+            <div className="rn-footer-widget">
 
-                <h4 class="title">Company</h4>
+                <h4 className="title">Company</h4>
 
-                <div class="inner">
+                <div className="inner">
 
-                    <ul class="footer-link link-hover">
+                    <ul className="footer-link link-hover">
 
                         <li><a href="index">Home</a></li>
 
@@ -121,17 +121,17 @@ const Footer = ({ noWave, rtl }) => {
 
         </div>
 
-        <div class="col-lg-2 col-md-6 col-sm-6 col-12 fo-op-re">
+        <div className="col-lg-2 col-md-6 col-sm-6 col-12 fo-op-re">
 
-            <div class="rn-footer-widget">
+            <div className="rn-footer-widget">
 
-                <div class="widget-menu-top">
+                <div className="widget-menu-top">
 
-                    <h4 class="title">Solutions</h4>
+                    <h4 className="title">Solutions</h4>
 
-                    <div class="inner">
+                    <div className="inner">
 
-                        <ul class="footer-link link-hover">
+                        <ul className="footer-link link-hover">
 
                             <li><a href="contact">Contact</a></li>
 
@@ -155,17 +155,17 @@ const Footer = ({ noWave, rtl }) => {
 
         </div>
 
-        <div class="col-lg-2 col-md-6 col-sm-6 col-12 fo-op-re">
+        <div className="col-lg-2 col-md-6 col-sm-6 col-12 fo-op-re">
 
-            <div class="rn-footer-widget">
+            <div className="rn-footer-widget">
 
-                <div class="widget-menu-top">
+                <div className="widget-menu-top">
 
-                    <h4 class="title">Services</h4>
+                    <h4 className="title">Services</h4>
 
-                    <div class="inner">
+                    <div className="inner">
 
-                        <ul class="footer-link link-hover">
+                        <ul className="footer-link link-hover">
 
                             <li><a href="retailer">Retailer</a></li>
 
@@ -183,17 +183,17 @@ const Footer = ({ noWave, rtl }) => {
 
         </div>
 
-        <div class="col-lg-2 col-md-6 col-sm-6 col-12 fo-op-re">
+        <div className="col-lg-2 col-md-6 col-sm-6 col-12 fo-op-re">
 
-            <div class="rn-footer-widget">
+            <div className="rn-footer-widget">
 
-                <div class="widget-menu-top">
+                <div className="widget-menu-top">
 
-                    <h4 class="title">Policies</h4>
+                    <h4 className="title">Policies</h4>
 
-                    <div class="inner">
+                    <div className="inner">
 
-                        <ul class="footer-link link-hover">
+                        <ul className="footer-link link-hover">
 
                             <li><a href="privacy-policy">Privacy Policy</a></li>
 
@@ -236,26 +236,26 @@ const Footer = ({ noWave, rtl }) => {
 
 
 
- {/* <div class="section-head text-center style-4">
-          <h2 class="mb-10">{ rtl ? 'جاهز' : 'Ready To' } <span>{ rtl ? 'للتنزيل' : 'Download' }</span> </h2>
+ {/* <div className="section-head text-center style-4">
+          <h2 className="mb-10">{ rtl ? 'جاهز' : 'Ready To' } <span>{ rtl ? 'للتنزيل' : 'Download' }</span> </h2>
           <p>{ rtl ? 'اكتشف مساحاتك المفضلة الجديدة ، من ساو باولو إلى سيول. قم بالتنزيل من App Store أو Google Play.' : 'Discover your new favorite spaces, from Sao Paulo to Seoul. Download from App Store or Google Play.' }</p>
-          <div class="d-flex align-items-center justify-content-center mt-50">
-            <a href="https://www.apple.com/app-store" rel="noreferrer" class="btn rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank">
-              <small> <i class="fab fa-apple me-2 pe-2 border-end"></i> { rtl ? 'تنزيل من متجر التطبيقات' : 'Download On App Store' }</small>
+          <div className="d-flex align-items-center justify-content-center mt-50">
+            <a href="https://www.apple.com/app-store" rel="noreferrer" className="btn rounded-pill bg-blue4 fw-bold text-white me-4" target="_blank">
+              <small> <i className="fab fa-apple me-2 pe-2 border-end"></i> { rtl ? 'تنزيل من متجر التطبيقات' : 'Download On App Store' }</small>
             </a>
-            <a href="https://play.google.com/store/apps" rel="noreferrer" class="btn rounded-pill hover-blue4 fw-bold border-blue4" target="_blank">
-              <small> <i class="fab fa-google-play me-2 pe-2 border-end"></i> { rtl ? 'تنزيل من متجر ابل' : 'Download On Google Play' }</small>
+            <a href="https://play.google.com/store/apps" rel="noreferrer" className="btn rounded-pill hover-blue4 fw-bold border-blue4" target="_blank">
+              <small> <i className="fab fa-google-play me-2 pe-2 border-end"></i> { rtl ? 'تنزيل من متجر ابل' : 'Download On Google Play' }</small>
             </a>
           </div>
         </div> */}
 
 
 
-        <div class="foot mt-80">
-          <div class="row align-items-center">
+        <div className="foot mt-80">
+          <div className="row align-items-center">
            
          
-            <div class="col-lg-2">
+            <div className="col-lg-2">
              
               
             </div>
@@ -265,18 +265,18 @@ const Footer = ({ noWave, rtl }) => {
 
 
 
-        <div class="copyright-area copyright-style-one">
+        <div className="copyright-area copyright-style-one">
 
 
-<div class="container">
+<div className="container">
 
-    <div class="row align-items-center fot-co-mr">
+    <div className="row align-items-center fot-co-mr">
 
-        <div class="col-lg-5 col-md-4 col-sm-12 col-12 tab-re">
+        <div className="col-lg-5 col-md-4 col-sm-12 col-12 tab-re">
 
-            <div class="copyright-right">
+            <div className="copyright-right">
 
-                <p class="copyright-text fo-co-re">Copyright © 2018-2023 | AeronFly<br/> International Private Limited.
+                <p className="copyright-text fo-co-re">Copyright © 2018-2023 | AeronFly<br/> International Private Limited.
 
                     All Right Reserved</p>
 
@@ -286,16 +286,16 @@ const Footer = ({ noWave, rtl }) => {
 
         
 
-        <div class="col-lg-3 col-md-4 col-sm-12 col-12 tab-re">
+        <div className="col-lg-3 col-md-4 col-sm-12 col-12 tab-re">
 
-            <div class="copyright-right">
+            <div className="copyright-right">
 
-                <p class="copyright-text fo-co-re r-f-r">Made in <b>     <img
+                <p className="copyright-text fo-co-re r-f-r">Made in <b>     <img
   src="https://flagcdn.com/in.svg"
   width="20"
   alt="India"/>
                 
-                </b> with <i class="fas fa-heart" style={{ color: '#b50f0f' }}></i></p>
+                </b> with <i className="fas fa-heart" style={{ color: '#b50f0f' }}></i></p>
 
             
 
@@ -308,19 +308,19 @@ const Footer = ({ noWave, rtl }) => {
 
         
 
-        <div class="col-lg-4">
+        <div className="col-lg-4">
 
-            <ul class="social-icons">
+            <ul className="social-icons">
 
-                <li><a href="https://www.facebook.com/aeronpay"><i class="fab fa-facebook fa-2x me-2 pe-2 border-end"></i>
+                <li><a href="https://www.facebook.com/aeronpay"><i className="fab fa-facebook fa-2x me-2 pe-2 border-end"></i>
 </a></li>
 
-                <li><a href="https://www.instagram.com/aeronpay"><i class="fab fa-twitter  fa-2x me-2 pe-2 border-end"></i></a></li>
+                <li><a href="https://www.instagram.com/aeronpay"><i className="fab fa-twitter  fa-2x me-2 pe-2 border-end"></i></a></li>
 
-                <li><a href="https://twitter.com/aeronpay"><i class="fab fa-linkedin  fa-2x me-2 pe-2 border-end"></i>
+                <li><a href="https://twitter.com/aeronpay"><i className="fab fa-linkedin  fa-2x me-2 pe-2 border-end"></i>
 </a></li>
 
-                <li><a href="https://in.linkedin.com/company/aeronpay"><i class="fab fa-instagram  fa-2x me-2 pe-2 border-end"></i>
+                <li><a href="https://in.linkedin.com/company/aeronpay"><i className="fab fa-instagram  fa-2x me-2 pe-2 border-end"></i>
 </a></li>
 
                 <li><a href="https://www.youtube.com/channel/UCmJUvfu-ImvkE58MtBhHJBQ"> 
@@ -348,7 +348,7 @@ const Footer = ({ noWave, rtl }) => {
       </div>
 
 
-      { !noWave && <img src="/assets/img/footer/footer_4_wave.png" alt="" class="wave" /> }
+      { !noWave && <img src="/assets/img/footer/footer_4_wave.png" alt="" className="wave" /> }
     </footer>
   )
 }
